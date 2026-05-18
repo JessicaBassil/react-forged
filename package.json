@@ -5,13 +5,16 @@
 	"main": "index.js",
 	"description": "A modern CLI tool for scaffolding production-ready React applications.",
 	"scripts": {
-		"test": "echo \"No tests specified yet\"",
 		"dev": "tsx bin/index.ts",
 		"build": "tsc",
 		"lint": "biome check .",
-		"typecheck": "tsc --noEmit",
 		"format": "biome format . --write",
-		"prepare": "husky"
+		"typecheck": "tsc --noEmit",
+		"test": "echo \"No tests specified yet\"",
+		"prepare": "husky",
+		"release": "changeset",
+		"version-packages": "changeset version",
+		"publish-packages": "changeset publish"
 	},
 	"lint-staged": {
 		"*.{ts,js,json,md,yml,yaml}": [
@@ -37,6 +40,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.15",
+		"@changesets/cli": "^2.31.0",
 		"@commitlint/cli": "^21.0.0",
 		"@commitlint/config-conventional": "^21.0.0",
 		"@types/node": "^25.6.2",
