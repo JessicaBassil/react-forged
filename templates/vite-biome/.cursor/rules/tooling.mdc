@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+
+# Tooling
+
+- Respect Biome formatting and linting rules.
+- Organize imports automatically.
+- Use strict TypeScript typing.
+- Avoid using any unless necessary.

@@ -1,26 +1,16 @@
-import { isCancel, text } from "@clack/prompts";
+#!/usr/bin/env node
 
-function validateEmpty(value?: string) {
-	if (!value || value.trim().length < 1) {
-		return "Value can not be empty";
-	}
-}
+import createProject from "../src/utils/create-project.js";
+import promptProjectName from "../src/utils/prompt-project-name.js";
+import promptTemplate from "../src/utils/prompt-template.js";
 
 async function main() {
 	try {
-		const projectName = await text({
-			message: "What is your project name?",
-			placeholder: "Please enter project name",
-			validate: validateEmpty,
-			defaultValue: "my-project",
-		});
+		const projectName = await promptProjectName();
 
-		if (isCancel(projectName)) {
-			console.log("Operation cancelled");
-			process.exit(0);
-		}
+		const template = await promptTemplate();
 
-		console.log(`Creating project: ${projectName}`);
+		await createProject({ projectName, template });
 	} catch (error) {
 		console.error(error);
 		process.exit(1);
