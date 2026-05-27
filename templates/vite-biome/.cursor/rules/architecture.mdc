@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+# Architecture
+
+- Use the @/* alias for imports.
+- Keep pages inside src/pages.
+- Keep reusable UI components inside src/components/ui.
+- Keep app-level setup inside src/app.
+- Keep layouts inside src/app/router/layouts.
+- Prefer explicit file names over generic index.tsx files.
