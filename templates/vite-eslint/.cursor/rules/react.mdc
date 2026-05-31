@@ -1,0 +1,12 @@
+---
+alwaysApply: false
+---
+
+# React Conventions
+
+- Prefer functional components.
+- Keep components focused and composable.
+- Avoid deeply nested ternaries.
+- Prefer early returns for conditional rendering.
+- Avoid prop drilling when composition is cleaner.
+- Use semantic HTML elements.

@@ -1,0 +1,15 @@
+---
+alwaysApply: true
+---
+
+# Tooling
+
+- Respect ESLint and Prettier rules.
+- Organize imports automatically.
+- Use strict TypeScript typing.
+- Avoid using `any` unless absolutely necessary.
+- Prefer `import type` for type-only imports.
+- Keep functions focused and maintainable.
+- Avoid nested ternary expressions.
+- Prefer readable and predictable code over clever abstractions.
+- Follow existing project structure and naming conventions.

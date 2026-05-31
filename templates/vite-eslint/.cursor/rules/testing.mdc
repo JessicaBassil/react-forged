@@ -1,0 +1,9 @@
+---
+alwaysApply: false
+---
+
+# Testing
+
+- Use Vitest for unit testing.
+- Prefer testing behavior over implementation details.
+- Keep tests small and focused.
