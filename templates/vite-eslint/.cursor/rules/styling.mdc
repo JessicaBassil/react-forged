@@ -1,0 +1,10 @@
+---
+alwaysApply: false
+---
+
+# Styling
+
+- Use Tailwind utility classes.
+- Avoid inline styles.
+- Prefer responsive utility classes.
+- Keep class names readable and grouped logically.

@@ -10,7 +10,12 @@ async function main() {
 
 		const template = await promptTemplate();
 
-		await createProject({ projectName, template });
+		const safeName = projectName
+			?.trim?.()
+			?.toLowerCase?.()
+			?.replace?.(/\s+/g, "-");
+
+		await createProject({ projectName: safeName, template });
 	} catch (error) {
 		console.error(error);
 		process.exit(1);
