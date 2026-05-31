@@ -1,6 +1,6 @@
 {
 	"name": "react-forged",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"main": "index.js",
 	"description": "A modern CLI tool for scaffolding production-ready React applications.",
@@ -15,6 +15,9 @@
 		"release": "changeset",
 		"version-packages": "changeset version",
 		"publish-packages": "changeset publish"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"files": [
 		"dist",
