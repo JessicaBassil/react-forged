@@ -7,6 +7,24 @@ async function promptTemplate() {
 			{
 				label: "Vite + Biome",
 				value: "vite-biome",
+				hint: "React, TypeScript, Tailwind, and Biome",
+			},
+			{
+				label: "Vite + ESLint + Prettier",
+				value: "vite-eslint",
+				hint: "React, TypeScript, Tailwind, ESLint, and Prettier",
+			},
+			{
+				label: "RSBuild + Biome (Coming soon)",
+				value: "rsbuild-biome",
+				hint: "React, TypeScript, Tailwind, and Biome on RSBuild",
+				disabled: true,
+			},
+			{
+				label: "RSBuild + ESLint + Prettier (Coming soon)",
+				value: "rsbuild-eslint",
+				hint: "React, TypeScript, Tailwind, ESLint, and Prettier on RSBuild",
+				disabled: true,
 			},
 		],
 	});
